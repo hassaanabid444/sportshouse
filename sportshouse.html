@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports House - Professional Cricket Hub</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #004080; /* Dark blue for a professional sports feel */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* Gold hover for cricket theme */
+        }
+
+        /* Hero Section */
+        #hero {
+            background: url('https://via.placeholder.com/1920x400?text=Cricket+Hero+Image') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        #hero h2 {
+            font-size: 3em;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #004080;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+        }
+
+        /* Upload Forms */
+        .upload-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .upload-form label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .upload-form input[type="file"],
+        .upload-form input[type="text"],
+        .upload-form textarea {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .upload-form button {
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .upload-form button:hover {
+            background-color: #002b5c;
+        }
+
+        /* Gallery and Scoreboard */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img,
+        .gallery video {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #004080;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            #hero h2 {
+                font-size: 2em;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sports House</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#highlights">Highlights</a>
+            <a href="#scoreboard">Scoreboard</a>
+            <a href="#upload">Upload</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Your Ultimate Cricket Destination</h2>
+    </section>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Sports House</h2>
+            <p>Discover the latest in cricket: highlights, live scores, player stats, and more. Upload your own content to share with the community!</p>
+        </section>
+
+        <section id="highlights">
+            <h2>Cricket Highlights</h2>
+            <p>Watch the best moments from recent matches.</p>
+            <div class="gallery">
+                <!-- Placeholder for uploaded highlights -->
+                <video controls>
+                    <source src="https://via.placeholder.com/400x200?text=Highlight+Video+1" type="video/mp4">
+                </video>
+                <img src="https://via.placeholder.com/400x200?text=Highlight+Image+1" alt="Highlight 1">
+                <!-- Add more dynamically via JS or backend -->
+            </div>
+        </section>
+
+        <section id="scoreboard">
+            <h2>Live Scoreboard</h2>
+            <p>Stay updated with real-time scores.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Match</th>
+                        <th>Team 1</th>
+                        <th>Score</th>
+                        <th>Team 2</th>
+                        <th>Score</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IND vs AUS</td>
+                        <td>India</td>
+                        <td>250/5</td>
+                        <td>Australia</td>
+                        <td>180/10</td>
+                        <td>India Won</td>
+                    </tr>
+                    <!-- Add more rows dynamically -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="upload">
+            <h2>Upload Your Content</h2>
+            <form class="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+                <label for="highlight">Upload Highlight (Video/Image):</label>
+                <input type="file" id="highlight" name="highlight" accept="video/,image/">
+
+                <label for="scoreboard">Upload Scoreboard Image:</label>
+                <input type="file" id="scoreboard" name="scoreboard" accept="image/*">
+
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter title">
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" placeholder="Describe your upload"></textarea>
+
+                <button type="submit">Upload</button>
+            </form>
+            <p>Note: This form is a placeholder. In a real setup, you'd need a backend (e.g., Node.js, Python Flask) to handle uploads and store data.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@sportshouse.com</p>
+            <p>Follow us on social media for updates!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sports House. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Basic JS for interactivity (e.g., form validation)
+        document.querySelector('.upload-form').addEventListener('submit', function(e) {
+            // Placeholder: Add real validation or AJAX upload
+            alert('Upload submitted! (This is a demo)');
+            e.preventDefault();
+        });
+    </script>
+
+</body>
+</html>
